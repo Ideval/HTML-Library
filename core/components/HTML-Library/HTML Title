@@ -1,4 +1,7 @@
 <?php
+/**
+ * Questo snippet genera un titolo HTML rispettando gli stardard SEO
+ **/
 $title = $modx->resource->get('longtitle');
 
 $ancestor = $modx->resource;
