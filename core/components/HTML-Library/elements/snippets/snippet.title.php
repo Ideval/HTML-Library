@@ -1,4 +1,14 @@
 <?php
+$defaultCorePath = $modx->getOption('core_path') .'components/HTML-Library/';
+$myCorePath = $modx->getOption('html-library.core_path', null, $defaultCorePath);
+$title = $modx->getService(
+	'title',
+	'Title',
+	$myCorePath .'model/HTML-Library/',
+	$scriptProperties
+);
+
+
 /**
  * Questo snippet genera un titolo HTML rispettando gli stardard SEO
  **/
